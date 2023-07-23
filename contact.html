@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pratap's Portfolio</title>
     <link rel="icon" href="Image/engineer.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -18,13 +18,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        </script>
+    <style>
+        /* Your custom CSS styles go here */
+        @keyframes send-message {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .send-button {
+            animation: send-message 1s infinite;
+        }
+
+        /* Message box styles */
+        .message-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            width: 200%;
+            resize: none;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            font-family: 'Arizonia', cursive;
+            font-size: 24px;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #f8f8f8;
+        }
+
+        #contact .first-section {
+            margin-top: 40px;
+        }
+
+        .Profilepic {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+        }
+
+        .context {
+            padding: 0 40px;
+        }
+
+        .context p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .ico {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+        }
+
+        .ico .icon {
+            margin-right: 15px;
+        }
+
+        .ico .icon a {
+            color: #555;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .ico .icon a:hover {
+            color: #ff007a;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 767.98px) {
+            .context {
+                padding: 0;
+            }
+        }
+
+        /* Styling for the paragraphs */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body class="container-fluid body_section">
@@ -45,7 +178,7 @@
                         <a class="nav-link headerachor" href="Education.html">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link headerachor" href="skill.html">Skills</a>
+                        <a class="nav-link headerachor" href="skill.html">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link headerachor" href="Project.html">Projects</a>
@@ -53,51 +186,79 @@
                     <li class="nav-item">
                         <a class="nav-link headerachor" href="contact.html">Contact Me</a>
                     </li>
-             </ul>
+                </ul>
+            </div>
         </nav>
-    </header>  
+    </header>
     <section id="contact">
         <div class="row first-section">
             <div class="col-lg-6 col-md-6">
-                <img class = "Profilepic" src="Image/Pratap.jpeg" alt=""style="width:300px;height:300px;">
-                <br>
-                <br>
-                <br>
-                <iframe width="1200" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Kuansh%20Bhadrak+(Google%20Map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a1ec58b4bf6ecfce97d8ece2de5ae5208b9d699e'></script>
-
+                <img class="Profilepic" src="Image/Pratap.jpeg" alt="">
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Kuansh%20Bhadrak+(Google%20Map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
             </div>
             <div class="col-lg-6 col-md-6 context">
-                
-                <p align="justify" >Focused and enthusiastic developer with a keen interest in software development 
-                    and artificial intelligence. By comprehensive exposure to the underlying 
-                    concepts and applying them vividly to various projects, my love for these
-                     domains came into being. I am a passionate individual who thrives to build 
-                     and apply algorithms to solve real-world industry problems.</p>
-                     
-                <p align="left" ><i class="fa fa-home" style="font-size:24px"></i> At- Kuansh, Bhadrak, Pin-756100, Odisha, India</p>
-                <p align="Left" ><i class='fab fa-whatsapp-square' style='font-size:24px'></i></i>+91 7978606023</p>
-                <ul class="ico">
-                    <li class="icon"><a href="https://github.com/7978606023" target=_blank><span class="iconify github" data-icon="ant-design:github-filled" data-inline="false"  data-width="50" data-height="50"></span></li></a>
-                     <li class="icon"><a href="https://www.instagram.com/pratapsahoo594/" target=_blank><span class="iconify instagram" data-icon="entypo-social:instagram-with-circle" data-inline="false" data-width="50" data-height="50"></span></li></a>
-                     <li class="icon"><a href="https://www.linkedin.com/in/pratap-sahu-921672146" target=_blank><span class="iconify linkedin" data-icon="entypo-social:linkedin-with-circle" data-inline="false"  data-width="50" data-height="50"></span></li></a>
-                    <li class="icon"><a href="mailto:pratapsahoo594@gmail.com" target=_blank><span class="iconify google" data-icon="ant-design:google-plus-circle-filled" data-inline="false" data-width="50" data-height="50"></span></li></a>
-                    <li class="icon"><a href="https://www.facebook.com/pratap.sahoo.3950" target=_blank><span class="iconify github" data-icon="entypo-social:facebook-with-circle" data-inline="false"  data-width="50" data-height="50"></span></li></a>
-                </ul>
-                  <!----  <a href="" target=_blank><button type="button" class="btn btn-primary btn-lg Resume">See my Resume</button></a> <-->
-                   
-                  <br> 
+                <p class="intro-text">
+                    Focused and enthusiastic developer with a keen interest in software development and artificial
+                    intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to
+                    various projects, my love for these domains came into being. I am a passionate individual who
+                    thrives to build and apply algorithms to solve real-world industry problems.
+                </p>
 
-                  <br>
-                    
-                   
+                <p class="contact-text">
+                    If you need assistance or guidance with projects, whether related to development or any other area,
+                    feel free to reach out to me. I'm always ready to discuss project-related matters or collaborate on
+                    exciting new projects. Don't hesitate to contact me if you have any questions or need help with your
+                    projects. Looking forward to connecting with you!
+                </p>
 
+                <p align="Left"><i class='fab fa-whatsapp-square' style='font-size:24px'></i>+91 7978606023</p>
+
+                <div class="row first-section">
+
+                    <div class="col-lg-6 col-md-6 context">
+
+                        <textarea class="message-box" rows="5" placeholder="Type your message here..."></textarea>
+
+                        <!-- Send message button with animation -->
+                        <a href="#" class="btn btn-primary btn-lg send-button" onclick="showThankYouMessage()">Send
+                            Message</a>
+
+                        <!-- Thank you message -->
+                        <div class="thank-you-message" style="display: none;">
+                            Thank you for your message!
+                        </div>
+                    </div>
                 </div>
-        </div>
-        
-    
+                <script>
+                    // JavaScript function to show the thank you message
+                    function showThankYouMessage() {
+                        const messageBox = document.querySelector(".message-box");
+                        const thankYouMessage = document.querySelector(".thank-you-message");
 
-        
-</section>
-    <footer class=footer>Developed with ❤️ by Pratap Kumar</footer>   
-    </body>
-    </html>
+                        // Check if the message box is empty before showing the thank you message
+                        if (messageBox.value.trim() === "") {
+                            alert("Please type a message before sending.");
+                        } else {
+                            // Hide the message box and show the thank you message
+                            messageBox.style.display = "none";
+                            thankYouMessage.style.display = "block";
+                        }
+                    }
+                </script>
+
+
+            </div>
+
+        </div>
+
+        <section id="contact">
+
+        </section>
+    </section>
+    <footer class="footer">Developed with ❤️ by Pratap Kumar</footer>
+</body>
+
+</html>

@@ -6,198 +6,407 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pratap's Portfolio</title>
   <link rel="icon" href="Image/engineer.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* Custom Styles */
+
+    .spark-icon {
+      width: 90px;
+      height: 90px;
+    }
+
+    .jmeter-icon {
+      width: 80px;
+      height: 80px;
+      /* Add any other styles you want */
+    }
+
+    .hadoop-icon {
+      width: 90px;
+      height: 90px;
+    }
+
+    .spring-icon {
+      width: 90px;
+      height: 90px;
+    }
+
+    .jenkins-icon {
+      width: 90px;
+      height: 90px;
+      /* Add any other styles you want */
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .navbar-brand {
+      font-family: 'Arizonia', cursive;
+      font-size: 2rem;
+    }
+
+    .nav-link {
+      color: #333;
+    }
+
+    .section-1 {
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    .Hello {
+      font-size: 3.5rem;
+      font-weight: 800;
+    }
+
+    .wave {
+      animation: wave-animation 2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .typed-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .cursor {
+      font-weight: 700;
+      animation: blink-animation 0.7s infinite;
+    }
+
+    @keyframes blink-animation {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .social_media_icon {
+      margin-top: 2rem;
+    }
+
+    .social_media_icon a {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .social_media_icon a:hover {
+      color: #007bff;
+    }
+
+    #Whatido {
+      padding: 4rem 0;
+      background-color: #f8f9fa;
+    }
+
+    #Whatido h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 3rem;
+    }
+
+    .Feature-first-image,
+    .Feature-second-image,
+    .Feature-third-image {
+      display: flex;
+      align-items: center;
+    }
+
+    .Feature-svg-image,
+    .Feature-svg-image-3 {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .Feature-Heading {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+
+    .dev-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .dev-icon li {
+      margin: 0 1rem;
+      list-style: none;
+    }
+
+    .Features-paragraph {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #fff;
+    }
+
+    .footer a:hover {
+      color: #007bff;
+    }
+  </style>
+  <script>
+
+    // JavaScript to handle the loading process and redirect to the main page
+    window.addEventListener("load", function () {
+      // Hide the loading page
+      const loadingPage = document.querySelector(".loading-page");
+      if (loadingPage) {
+        loadingPage.style.display = "none";
+      }
+    });
+
+  </script>
 </head>
+
 <body class="container-fluid body_section">
-        <header>
-              <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand brand-name" href="#">Pratap Kumar Sahoo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul  class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link headerachor"  href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor"   href="Education.html">Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor"  href="skill.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor"  href="Project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor"  href="contact.html">Contact Me</a>
-                    </li>
-                    
-                  </ul>
-              </nav>
-          </header>
-          
-          <section  id = "Home">
-              <div  class="row column1">
-                <div  class="col-lg-6 col-md-6 first-image">
-                    <img class = "boyimage" src="Image/20200630_162659.gif" alt="">
-                </div>  
-                  <div  class="col-lg-6 section-1">
-                      <h1 class = "Hello">Hey! I'm Pratap <span class="wave">👋</span></h1>
-                      <div class="container">
-                        <p>I'm  <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                    <script>
-                    const typedTextSpan = document.querySelector(".typed-text");
-                    const cursorSpan = document.querySelector(".cursor");
-                    
-                    const textArray = ["Data Engineer", "Java Developer", "Software Instructor", "SDET Developers", "Back-end Developer"];
-                    const typingDelay = 200;
-                    const erasingDelay = 100;
-                    const newTextDelay = 2000; // Delay between current and next text
-                    let textArrayIndex = 0;
-                    let charIndex = 0;
-                    
-                    function type() {
-                      if (charIndex < textArray[textArrayIndex].length) {
-                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                        charIndex++;
-                        setTimeout(type, typingDelay);
-                      } 
-                      else {
-                        cursorSpan.classList.remove("typing");
-                        setTimeout(erase, newTextDelay);
-                      }
-                    }
-                    
-                    function erase() {
-                      if (charIndex > 0) {
-                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-                        charIndex--;
-                        setTimeout(erase, erasingDelay);
-                      } 
-                      else {
-                        cursorSpan.classList.remove("typing");
-                        textArrayIndex++;
-                        if(textArrayIndex>=textArray.length) textArrayIndex=0;
-                        setTimeout(type, typingDelay + 1100);
-                      }
-                    }
-                    
-                    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-                      if(textArray.length) setTimeout(type, newTextDelay + 250);
-                    });
-                    </script>
-                      </div>
-                           
-                      <p>A passionate Software Engineer having an experience on Data Engineer, Data Analystics,
-                          Machine Learning, SDET Engineer and Back-end Developer </p>
-                          
 
-                          <div class=social_media_icon>
-                            <a class="btn" href="https://www.instagram.com/pratapsahoo594/" target=_blank>
-                              <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn" href="https://www.linkedin.com/in/pratap-sahu-921672146" target=_blank>
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="btn" href="https://github.com/7978606023" target=_blank>
-                              <i class="fab fa-github"></i>
-                            </a>
-                            <a class="btn" href="mailto:pratapsahoo594@gmail.com" target=_blank>
-                              <i class="fab fa-google"></i>
-                            </a>
-                          </div>
-                  </div>
-                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
-              </div>
-          </section>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand brand-name" href="#">Pratap Kumar Sahoo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="Education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="skill.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="Project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link headerachor" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="Home">
+    <div class="row column1">
+      <div class="col-lg-6 col-md-6 first-image">
+        <img class="boyimage" src="Image/20200630_162659.gif" alt="">
+      </div>
+      <div class="col-lg-6 section-1">
+        <h1 class="Hello">Hey! I'm Pratap <span class="wave">👋</span></h1>
+        <div class="container">
+          <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+          <script>
+            // JavaScript code for typing effect
+
+            const typedTextSpan = document.querySelector(".typed-text");
+            const cursorSpan = document.querySelector(".cursor");
+
+            const textArray = ["Data Engineer", "Java Developer", "Software Instructor", "SDET Developer", "Back-end Developer"];
+            const typingDelay = 200;
+            const erasingDelay = 100;
+            const newTextDelay = 2000; // Delay between current and next text
+            let textArrayIndex = 0;
+            let charIndex = 0;
+
+            function type() {
+              if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+              } else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+              }
+            }
+
+            function erase() {
+              if (charIndex > 0) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+              } else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+              }
+            }
+
+            document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+              if (textArray.length) setTimeout(type, newTextDelay + 250);
+            });
+          </script>
+        </div>
+
+        <p>A passionate AWS Certified Software Engineer with experience in Data Engineering, Data Analytics, Machine
+          Learning, SDET Engineering, and Back-end Development.</p>
+
+        <div class="social_media_icon">
+          <a class="btn" href="https://www.instagram.com/pratapsahoo594/" target=_blank>
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/pratap-sahu-921672146" target=_blank>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a class="btn" href="https://www.facebook.com/pratap.sahoo.3950" target=_blank>
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="btn" href="mailto:pratapsahoo594@gmail.com" target=_blank>
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+      </div>
+      <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
+    </div>
+  </section>
 
 
-          <section id=Whatido>
-            <h1>What I'm Doing ?</h1>
-              <div class = "row feature-1">
-                  <div class="col-lg-6 col-md-6 Feature-first-image ">
-                    <img class = "Feature-svg-image" src="Image/dataengineer.gif" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <h1 class= "Feature-Heading" >Data Engineer</h1>
-                    <ul class = "dev-icon">
-                      <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
-                      <i class='fab fa-python' style='font-size:48px;color:rgb(255, 230, 0)'></i>
-                      <li><img class="numpy" src="Image/apache-spark.svg" alt=""></li>
-                      <li><img class = "pandas" src="Image/hadoop.svg" alt=""></li>
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 Developed spark applications for read and write operation to Postgres & Spanner using Google Cloud.</p>
-                      <p class ="Features-paragraph">
-                         💥 Developed Ingestion pipelines using AWS Glue, Lambda for different sources.</p>
-                      <p  class ="Features-paragraph">
-                         💥 Experience of working with different technologies like Java , Python, Spark, Hive, AWS, Google Cloud etc and have knowlege of
-                        Data analyitical algorithm and techniques.</p>
-                    </div>
-                </div>
-              </div>
-              <div class="row feature-2">
-                <div class="col-lg-6 col-md-6 feature-web">
-                  <h1 class="Feature-Heading">Java Developer</h1>
-                  <ul class = "dev-icon">
-                    <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
-                    <li><img class="numpy" src="Image/spring.svg" alt=""></li>
-                    <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
-                   
-                
-                  </ul>
-                  <div class = "Data-Analytic">
-                    <p class ="Features-paragraph">
-                       💥 Designed, implemented and tested the Spring Domain Model for the services using Core Java.</p>
-                    <p  class ="Features-paragraph">
-                       💥 Involved in web component design and development using the spring framework, JSP, Servlets, and taglibs.</p>
-                      <p  class ="Features-paragraph">
-                       💥 Developed RestAPI using SpringBoot and Java.</p>
-                      </div>
-                </div>
-                <div class="col-lg-6 col-md-6 Feature-second-image ">
-                  <img class = "Feature-svg-image" src="Image/javadevloper.gif" alt="">
-                </div>
-              </div>
-              <div class="row feature-3">
-                <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/sdet.gif" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 feature-coding">
-                    <h1 class="Feature-Heading">SDET Developer</h1>
-                    <ul class = "dev-icon">
-                     <li></li>
-                     <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
-                     <li><img class="numpy" src="Image/jenkins.svg" alt=""></li>
-                     <li><img class="numpy" src="Image/agile.svg" alt=""></li>
-                    </ul>
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 Setup continuous integration with jenkins and make use of wide range of plugins available to setup smooth developer friendly workflows.</p>
-                      <p class ="Features-paragraph">
-                         💥 Setup full CI/CD pipelines so that each commit a developer makes will go through standard process of software lifecycle.</p>
-                         <p  class ="Features-paragraph">
-                         💥 Streamlined and coordinated Configuration/Build/Release/Deployment/Process/Environment management across all the products in our Applications.</p>
-                        </div>
-                  </div>
-              </div>
-               
-        
-          </section>
-    <footer class=footer>Developed with ❤️ by Pratap Kumar</footer>
+  <section id="Whatido">
+    <h1>What I'm Doing ?</h1>
+    <div class="row feature-1">
+      <div class="col-lg-6 col-md-6 Feature-first-image ">
+        <img class="Feature-svg-image" src="Image/dataengineer.gif" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <h1 class="Feature-Heading">Data Engineer</h1>
+        <ul class="dev-icon">
+          <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
+          <li><i class='fab fa-python fa-5x' style='font-size:80px;'></i></li>
+          <li><img class="spark-icon" src="Image/apache-spark.svg" alt=""></li>
+          <li><i class='fas fa-database fa-5x' style='color:#008080; font-size: 80px;'></i></li>
+          <li><img class="hadoop-icon" src="Image/hadoop.svg" alt=""></li>
+          <li><i class='fab fa-aws fa-5x' style='color:#FF9900; font-size: 80px;'></i></li>
+        </ul>
+        <div class="Data-Analytic">
+          <p class="Features-paragraph">
+            💥 Developed Various ETL Applications and Ingestion pipelines using Pyspark and AWS.</p>
+          <p class="Features-paragraph">
+            💥 Involved in various migration projects to migrate from source to destination.</p>
+          <p class="Features-paragraph">
+            💥 Tech Stacks-: Java, Python, Spark, Hive, Hadoop, SQL, AWS, Ab Initio, DBT, Airflow, Snowflake </p>
+        </div>
+      </div>
+    </div>
+    <div class="row feature-2">
+      <div class="col-lg-6 col-md-6 feature-web">
+        <h1 class="Feature-Heading">Java Developer</h1>
+        <ul class="dev-icon">
+          <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
+          <li><img class="spring-icon" src="Image/spring.svg" alt=""></li>
+          <li><i class="fab fa-docker fa-5x" style="color:#2496ED;"></i></li>
+          <li><i class="fas fa-microchip fa-5x" style="color:#33cc33;"></i></li>
+          <li><i class="fas fa-database fa-5x" style="color:#5a9f43;"></i></li>
+          <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
+        </ul>
+        <div class="Data-Analytic">
+          <p class="Features-paragraph">
+            💥 Designed and implemented the Spring Domain Model for services using Core Java.</p>
+          <p class="Features-paragraph">
+            💥 Developed RestAPIs using Spring Boot and Java.</p>
+          <p class="Features-paragraph">
+            💥 Tech Stacks-: Java, Spring boot, Hibernate, Maven, ReactJS </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 Feature-second-image ">
+        <img class="Feature-svg-image" src="Image/javadevloper.gif" alt="">
+      </div>
+    </div>
+    <div class="row feature-3">
+      <div class="col-lg-6 col-md-6 Feature-third-image">
+        <img class="Feature-svg-image-3" src="Image/sdet.gif" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 feature-coding">
+        <h1 class="Feature-Heading">SDET Developer</h1>
+        <ul class="dev-icon">
+          <li></li>
+          <li><i class="fab fa-java fa-5x" style="color:#3776ab"></i></li>
+          <li><img class="jenkins-icon" src="Image/jenkins.svg" alt="Jenkins"></li>
+          <li><img class="jmeter-icon" src="Image/datadog.svg" alt="JMeter"></li>
+          <li><img class="jmeter-icon" src="Image/search.svg" alt="JMeter"></li>
+          <li><img class="jmeter-icon" src="Image/grafana.svg" alt="JMeter"></li>
+          <li><img class="jmeter-icon" src="Image/jmeter.png" alt="JMeter"></li>
+          <li><i class="fab fa-elasticsearch fa-5x" style="color:#005571;"></i></li>
+        </ul>
+        <div class="Data-Analytic">
+          <p class="Features-paragraph">
+            💥 Setup continuous integration with Jenkins and make use of a wide range of plugins available to set up
+            smooth developer-friendly workflows.</p>
+          <p class="Features-paragraph">
+            💥 Setup full CI/CD pipelines so that each commit a developer makes will go through the standard process of
+            the software lifecycle.</p>
+          <p class="Features-paragraph">
+            💥 Tech Stacks-: Java, Groovy, Jenkins, Grafana, Jmeter, Elastic Search, Kibana, AWS, GCP </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer class=footer>Developed with ❤️ by Pratap Kumar</footer>
 </body>
+
 </html>

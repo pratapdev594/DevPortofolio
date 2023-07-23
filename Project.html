@@ -1,140 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Pratap's Portfolio</title>
-        <link rel="icon" href="Image/engineer.ico">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="Project.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pratap's Portfolio</title>
+    <link rel="icon" href="Image/engineer.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Project.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      </head>
-      
-      <body class="container-fluid body_section">
-              <header>
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                      <a class="navbar-brand brand-name" href="#">Pratap Kumar Sahoo</a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <style>
+        /* Your custom CSS styles go here */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
 
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link headerachor" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link headerachor" href="Education.html">Education</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link headerachor" href="skill.html">Skills</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link headerachor" href="Project.html">Projects</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link headerachor" href="contact.html">Contact Me</a>
-                          </li>
-                        </ul>
-                    </nav>
-                </header>
-                <section id=Projects class="Section1">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <img class="projectimage" src="Image/programmer.gif" alt="">
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            font-family: 'Arizonia', cursive;
+            font-size: 24px;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #f8f8f8;
+        }
+
+        .Section1 {
+            margin-top: 40px;
+        }
+
+        .projectimage {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .project-heading {
+            padding: 20px;
+        }
+
+        .P-heading {
+            font-family: 'Arizonia', cursive;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .p-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-container {
+            margin-top: 40px;
+        }
+
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-wrap img {
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-wrap .portfolio-info {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-wrap:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-wrap:hover .portfolio-info {
+            opacity: 1;
+        }
+
+        .portfolio-info i {
+            font-size: 30px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-info a {
+            font-size: 24px;
+            color: #fff;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-info a:hover {
+            color: #ff007a;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        .bold-stylish-text {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            /* Choose your preferred font-family */
+            color: #ff007a;
+            /* Choose your preferred text color */
+            text-transform: uppercase;
+            /* Optional: Convert the text to uppercase */
+            /* Add any other styles you want to make it stylish */
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff007a;
+            /* Choose your preferred background color */
+            color: #fff;
+            /* Choose your preferred text color */
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .floating-button a {
+            color: #fff;
+            /* Choose your preferred text color */
+            text-decoration: none;
+        }
+
+        .floating-button:hover {
+            background-color: #ff0055;
+            /* Choose your preferred hover background color */
+        }
+
+        .client-count {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid body_section">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand brand-name" href="#">Pratap Kumar Sahoo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="Education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="skill.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="Project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="Projects" class="Section1">
+        <div class="row">
+            <!-- Left Slide: Project Information -->
+            <div class="col-lg-6 col-md-6 project-heading">
+                <h1 class="P-heading">Projects</h1>
+
+                <p class="p-text">My Projects use various technologies to make the models more accurate and stable. As
+                    of
+                    now, I have done many projects, but in the near future, I will create more exciting projects.</p>
+            </div>
+
+            <div class="floating-button">
+                <a href="https://pratap-kumar-sahoo.blogspot.com/" target="_blank">Reach out to my blogs</a>
+            </div>
+
+            <!-- Right Slide: Carousel of Blogs -->
+            <div class="col-lg-6 col-md-6">
+
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <center>
+                        <h4 class="bold-stylish-text">Completed Projects</h4>
+                    </center>
+                    <div class="carousel-inner">
+                        <!-- Blog Item 1 -->
+                        <div class="carousel-item">
+                            <div class="carousel-blog-item">
+                                <img src="image/avatar.jpg" class="img-fluid" alt="Kubernetes VS Docker">
+                                <div class="carousel-blog-info">
+                                    <center>
+                                        Avatar
+                                    </center>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 project-heading">
-                          <h1 class = "P-heading">Projects</h1>
-                          <p class="p-text">My Project uses various technology to make the model more accurate and stable. As of
-                            Now I have done many projects but in near future I will make more projects.
-                          </p>
-                          <a href="https://pratap-kumar-sahoo.blogspot.com/" target="_blank">Reach out to my blogs</a>
+                        <div class="carousel-item active">
+                            <div class="carousel-blog-item">
+                                <img src="image/talentscreen.jpg" class="img-fluid"
+                                    alt="Kafka's Custom Partitioning in Action">
+                                <div class="carousel-blog-info">
+                                    <center>
+                                        Talent Screen
+                                    </center>
+                                </div>
+
+                            </div>
                         </div>
+                        <div class="carousel-item">
+                            <div class="carousel-blog-item">
+                                <img src="image/pipeline.png" class="img-fluid" alt="Kubernetes VS Docker">
+                                <div class="carousel-blog-info">
+                                    <center>
+                                        Performance Moniter Pipeline
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-blog-item">
+                                <img src="image/caspian.png" class="img-fluid" alt="Kubernetes VS Docker">
+                                <div class="carousel-blog-info">
+                                    <center>
+                                        Caspian
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-blog-item">
+                                <img src="image/odp.png" class="img-fluid" alt="Kubernetes VS Docker">
+                                <div class="carousel-blog-info">
+                                    <center>
+                                        ODP Ingestion
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="row Section1">
-                      
-                      <div class="row portfolio-container">
+                    <!-- Add carousel control buttons for blogs -->
+                    <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#blogCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Blogs" class="Section1">
+    </section>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                          <center><h4>Avatar</h4></center>
-                          <div class="portfolio-wrap">
-                            <a href="projects/twitteranalysis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                            <img src="image/avatar.png" class="img-fluid" alt="">
-                            <a href="projects/twitteranalysis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                            <div class="portfolio-info">
-                              
-                              <div class="portfolio-links">
-                                <a href="projects/twitteranalysis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                          <center><h4>TalentScreen</h4></center>
-                          <div class="portfolio-wrap">
-                            <img src="image/talentscreen.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              
-                              <div class="portfolio-links">
-                                <a href="projects/iras.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-                          <center><h4>Performance Moniter Pipeline</h4></center>
-                          <div class="portfolio-wrap">
-                            <img src="image/pipeline.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              
-                              <div class="portfolio-links">
-                                <a href="projects/resume.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                          <center><h4>Caspian</h4></center>
-                          <div class="portfolio-wrap">
-                            <img src="image/caspian.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              
-                              <div class="portfolio-links">
-                                <a href="projects/musicplayer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                          <center><h4>ODP Ingestion</h4></center>
-                          <div class="portfolio-wrap">
-                            <img src="image/odp.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                              
-                              <div class="portfolio-links">
-                                <a href="projects/recommender.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>                
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                <footer class=footer>Developed with ❤️ by Pratap Kumar</footer>
+    <footer class="footer">Developed with ❤️ by Pratap Kumar</footer>
 
 </body>
+
 </html>
