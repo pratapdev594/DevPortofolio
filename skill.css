@@ -1,3 +1,5 @@
+@import "style.css";
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -24,7 +26,7 @@ body{
       font-family: "Lovely Home";
       font-size: 50px;
       font-weight: bold;
-      color: #351458;
+      color: rgba(255,255,255,0.92);
   }
 
   @media only screen and (max-width : 764px){
@@ -32,19 +34,19 @@ body{
       font-family: "Lovely Home";
       font-size: 40px;
       font-weight: bold;
-      color: #351458;
+      color: rgba(255,255,255,0.92);
   }
 }
 
 
   .headerachor {
-    color: black;
+    color: rgba(255,255,255,0.86);
     margin: 0 7px 0 7px;
     font-size: 25px;
   }
 
   .headerachor:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255,255,255,0.08);
   }
 
   .Section1{
@@ -62,11 +64,51 @@ body{
     font-weight: 300;
 }
 
+  .Details-list,
+  .Tools-list{
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .Details-item,
+  .Tools-item{
+    display: block;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 14px;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .Details-item .iconify,
+  .Tools-item .iconify{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--accent2);
+  }
+
+  .Tools-sublist{
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding-left: 18px;
+  }
+
+  .Tools-sublist li{
+    display: list-item;
+    color: var(--muted);
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+
 #SkillBox {
     width: 95%;
     height: auto;
     margin: 40px auto;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     /* border: 1px solid #cdcdcd; */
     padding: 10px;
@@ -88,7 +130,8 @@ body{
     position: relative;
     border-radius:20px;
     /* background: rgba(17, 17, 17, .3); */
-    background: #c5c2ff;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
     margin: 20px auto;
 }
 
@@ -102,7 +145,7 @@ body{
     -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color:#6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-HTML {
     from {
@@ -137,7 +180,7 @@ to {
     width: 70%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-CSS {
     from {
@@ -172,7 +215,7 @@ to {
     width: 80%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-Python {
     from {
@@ -207,7 +250,7 @@ to {
     width: 65%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-JS {
     from {
@@ -244,7 +287,7 @@ to {
     width: 80%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-C {
     from {
@@ -279,7 +322,7 @@ to {
     width: 85%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-Cplus {
     from {
@@ -314,7 +357,7 @@ to {
     width: 80%;
     height: 50px;
     position: absolute;
-    background-color: #6c63ff;
+    background-color: var(--accent);
 }
 @keyframes Animate-SQL {
     from {

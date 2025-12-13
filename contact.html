@@ -8,6 +8,7 @@
     <link rel="icon" href="Image/engineer.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
@@ -25,142 +26,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
-    <style>
-        /* Your custom CSS styles go here */
-        @keyframes send-message {
-            0% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .send-button {
-            animation: send-message 1s infinite;
-        }
-
-        /* Message box styles */
-        .message-box {
-            margin-top: 20px;
-            padding: 10px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            width: 200%;
-            resize: none;
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #ffffff;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .navbar-brand {
-            font-family: 'Arizonia', cursive;
-            font-size: 24px;
-        }
-
-        .nav-link {
-            color: #fff;
-        }
-
-        .nav-link:hover {
-            color: #f8f8f8;
-        }
-
-        #contact .first-section {
-            margin-top: 40px;
-        }
-
-        .Profilepic {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            margin-bottom: 40px;
-        }
-
-        .context {
-            padding: 0 40px;
-        }
-
-        .context p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .ico {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-            display: flex;
-        }
-
-        .ico .icon {
-            margin-right: 15px;
-        }
-
-        .ico .icon a {
-            color: #555;
-            font-size: 24px;
-            transition: all 0.3s ease;
-        }
-
-        .ico .icon a:hover {
-            color: #ff007a;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 767.98px) {
-            .context {
-                padding: 0;
-            }
-        }
-
-        /* Styling for the paragraphs */
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        .intro-text {
-            font-size: 16px;
-            line-height: 1.2;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        .contact-text {
-            font-size: 14px;
-            line-height: 1.6;
-            text-align: justify;
-        }
-    </style>
 </head>
 
 <body class="container-fluid body_section">
+    <div class="bg-effects"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand brand-name" href="#">Pratap Kumar Sahoo</a>
@@ -191,69 +60,130 @@
         </nav>
     </header>
     <section id="contact">
-        <div class="row first-section">
-            <div class="col-lg-6 col-md-6">
-                <img class="Profilepic" src="Image/Pratap.jpeg" alt="">
-                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    id="gmap_canvas"
-                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Kuansh%20Bhadrak+(Google%20Map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                </iframe>
+        <div class="container contact-wrap">
+            <div class="contact-hero">
+                <h1 class="contact-title">Contact</h1>
+                <p class="contact-subtitle">For projects, collaborations, or job opportunities — email me for the fastest response.</p>
             </div>
-            <div class="col-lg-6 col-md-6 context">
-                <p class="intro-text">
-                    Accomplished Software Developer specializing in enterprise-grade, high-performance applications across Java development, Big Data engineering, and Generative AI. Skilled in Java, Python, Scala, and Groovy, with deep expertise in Big Data technologies such as Apache Spark, PySpark, Hadoop, Hive, Snowflake, and Databricks. Adept at designing scalable data pipelines and ETL workflows, building intelligent, context-aware applications, and leveraging AI frameworks like LangChain, LangGraph, Langfuse, LlamaIndex, MCP, Knowledge Graph, and OpenAI to solve complex business problems efficiently.
-                </p>
 
-                <p class="contact-text">
-                    Proficient in cloud-native architecture on AWS, Azure, and Google Cloud, integrating containerization and orchestration using Docker and Kubernetes with DevOps and CI/CD pipelines via Git, Jenkins, and Azure Pipeline. Experienced in backend development with Spring Boot, Spring MVC, Spring JDBC, and FastAPI, as well as API development and testing using Postman, SoapUI, and JMeter. Leveraging visualization and monitoring tools like Grafana, New Relic, DataDog, Kibana, and Tableau, I deliver robust, scalable, and future-ready solutions with precision, innovation, and reliability.
-                </p>
-		
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <div class="contact-card contact-profile">
+                        <div class="profile-row">
+                            <img class="Profilepic" src="Image/Pratap.jpeg" alt="">
+                            <div class="profile-meta">
+                                <h2 class="profile-name">Pratap Kumar Sahoo</h2>
+                                <p class="profile-role">Sr. Software Engineer</p>
+                            </div>
+                        </div>
 
-                <p align="Left"><i class='fab fa-whatsapp-square' style='font-size:24px'></i>+91 7978606023</p>
+                        <p class="contact-intro">
+                            I build scalable back-end services, data pipelines, and GenAI applications. I focus on clean architecture, performance, and measurable business outcomes.
+                        </p>
 
-                <div class="row first-section">
+                        <ul class="contact-highlights" aria-label="Core skills">
+                            <li>
+                                <strong>Backend:</strong>
+                                <span class="hl-line">Java, Spring Boot, Python, FastAPI</span>
+                            </li>
+                            <li>
+                                <strong>Data:</strong>
+                                <span class="hl-line">Spark / PySpark, Hadoop, SQL, Hive</span>
+                            </li>
+                            <li>
+                                <strong>GenAI:</strong>
+                                <span class="hl-line">LangGraph, LangChain, LlamaIndex, Agentic RAG, Langfuse</span>
+                            </li>
+                            <li>
+                                <strong>Cloud:</strong>
+                                <span class="hl-line">AWS, GCP, Azure</span>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="col-lg-6 col-md-6 context">
-
-                        <textarea class="message-box" rows="5" placeholder="Type your message here..."></textarea>
-
-                        <!-- Send message button with animation -->
-                        <a href="#" class="btn btn-primary btn-lg send-button" onclick="showThankYouMessage()">Send
-                            Message</a>
-
-                        <!-- Thank you message -->
-                        <div class="thank-you-message" style="display: none;">
-                            Thank you for your message!
+                    <div class="contact-card contact-methods">
+                        <div class="methods-grid">
+                            <a class="method" href="mailto:pratapsahoo594@gmail.com?subject=Portfolio%20Contact&body=Hi%20Pratap%2C%0A%0AI'm%20reaching%20out%20from%20your%20portfolio.%0A%0AThanks%2C%0A">
+                                <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="method-body">
+                                    <div class="method-title">Email</div>
+                                    <div class="method-value">pratapsahoo594@gmail.com</div>
+                                </div>
+                            </a>
+                            <a class="method" href="https://www.linkedin.com/in/pratap-sahu-921672146" target="_blank">
+                                <div class="method-icon"><i class="fab fa-linkedin"></i></div>
+                                <div class="method-body">
+                                    <div class="method-title">LinkedIn</div>
+                                    <div class="method-value">View my profile</div>
+                                </div>
+                            </a>
+                            <a class="method" href="resume.pdf" target="_blank">
+                                <div class="method-icon"><i class="fas fa-file-pdf"></i></div>
+                                <div class="method-body">
+                                    <div class="method-title">Resume</div>
+                                    <div class="method-value">Download PDF</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <script>
-                    // JavaScript function to show the thank you message
-                    function showThankYouMessage() {
-                        const messageBox = document.querySelector(".message-box");
-                        const thankYouMessage = document.querySelector(".thank-you-message");
 
-                        // Check if the message box is empty before showing the thank you message
-                        if (messageBox.value.trim() === "") {
-                            alert("Please type a message before sending.");
-                        } else {
-                            // Hide the message box and show the thank you message
-                            messageBox.style.display = "none";
-                            thankYouMessage.style.display = "block";
-                        }
-                    }
-                </script>
+                <div class="contact-right">
+                    <div class="contact-card contact-form-card">
+                        <h2 class="form-title">Send a message</h2>
+                        <p class="form-subtitle">I usually respond within 24–48 hours.</p>
 
+                        <form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="contact.html?success=1">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p style="display:none;">
+                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                            </p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label class="form-label" for="contactName">Your Name</label>
+                                    <input id="contactName" class="form-input" name="name" type="text" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label" for="contactEmail">Email</label>
+                                    <input id="contactEmail" class="form-input" name="email" type="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
 
+                            <div class="form-field">
+                                <label class="form-label" for="contactMessage">Message</label>
+                                <textarea id="contactMessage" class="form-textarea" name="message" rows="6" placeholder="Tell me what you want to build..." required></textarea>
+                            </div>
+
+                            <!-- Send message button with animation -->
+                            <button class="send-button" type="submit">Send Message</button>
+
+                            <!-- Thank you message -->
+                            <div class="thank-you-message" style="display: none;">
+                                Thanks! Your message has been recorded.
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-        <section id="contact">
-
-        </section>
     </section>
-    <footer class="footer">Developed with ❤️ by Pratap Kumar</footer>
+    <footer class="footer">&copy; <span id="year"></span> RHDev-Soft.</footer>
+    <script src="theme.js"></script>
+    <script>
+        const yearEl = document.getElementById("year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const success = params.get("success");
+        if (success === "1") {
+            const thankYouMessage = document.querySelector(".thank-you-message");
+            if (thankYouMessage) {
+                thankYouMessage.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
